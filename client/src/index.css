@@ -1,0 +1,16 @@
+/* Load all of Tailwind's styles. */
+@import "tailwindcss";
+
+/* The typography plugin adds the "prose" class: nice default styles for
+   text we did not write HTML for ourselves (like our Markdown preview). */
+@plugin "@tailwindcss/typography";
+
+/* Dark mode: "dark:" classes apply when <html> has the class "dark"
+   (instead of following the system setting automatically).
+   Our useTheme hook adds/removes that class. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Tell the browser too, so built-in parts (date picker, scrollbars, checkboxes) turn dark */
+.dark {
+  color-scheme: dark;
+}

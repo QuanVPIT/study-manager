@@ -1,0 +1,14 @@
+# Libraries downloaded by npm (can be re-downloaded with "npm install")
+node_modules/
+
+# Build output
+dist/
+
+# Secret keys (e.g. the AI API key) - NEVER commit these!
+.env
+.env.*
+# ...but DO keep the example file (it has no real key)
+!.env.example
+
+# macOS system files
+.DS_Store
